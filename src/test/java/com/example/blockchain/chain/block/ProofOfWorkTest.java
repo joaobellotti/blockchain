@@ -10,6 +10,7 @@ public class ProofOfWorkTest {
     public void shouldFindAValidProof() {
         ProofOfWork proofOfWork = new ProofOfWork(new SymmetricSignature());
         int result = proofOfWork.process(100);
+        System.out.println("testing pipeline");
         assertEquals(35293, result);
     }
 
